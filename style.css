@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0; /*Border of the buttons removed*/
+    box-sizing: border-box;
+    user-select: none; /*The user-select property specifies whether the text of an element can be selected.*/
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(bg.jpg);
+    background-size: cover;
+}
+
+.container {
+    position: relative; 
+    background: rgba(255, 255, 255, 0.093);
+    /*Setting the top, right, bottom, and left properties of a relatively-positioned element will cause it to be adjusted away from its normal position. 
+    Other content will not be adjusted to fit into any gap left by the element.*/
+    height: 450px;
+    width: 450px;
+    text-align: center;
+    border-radius: 50%; 
+    box-shadow: 6px 10px 10px #0b0b11, inset 10px 6px 10px rgb(145, 142, 142); 
+    /*box-shadow: none|h-offset v-offset blur spread color, |inset|initial|inherit;
+    /*Inset changes the shadow from an outer shadow (outset) to an inner shadow.*/
+}
+
+.container h3 {
+    color: rgb(241, 220, 220);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-top: 90px;
+    font-size: 28px;
+}
+
+.container p {
+    margin-top: 65px;
+    color: rgb(241, 220, 220);
+    font-size: 58px;
+    text-align: center;
+}
+
+.container button {
+    cursor: pointer;
+    margin: 70px 5px 0 0;
+    width: 80px;
+    height: 35px;
+    background: transparent;
+    color: black;
+    border: 1px solid black;
+    border-radius: 4px;
+    font-size: 14px;
+    letter-spacing: 2px;
+    transition: all 1s; /*Transitions allows you to change property values smoothly, over a given duration.*/
+}
+
+.container button:hover {
+    background: #f20089;
+    color: white;
+}
